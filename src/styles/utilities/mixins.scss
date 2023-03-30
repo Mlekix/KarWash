@@ -1,0 +1,36 @@
+@mixin goldFontColor() {
+  background: -webkit-linear-gradient(#f1dd23, #c5b203);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin whiteFontColor() {
+  background: -webkit-linear-gradient(#ffffff, #cecece);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin goldButton() {
+  background: rgb(210, 190, 0);
+  background: linear-gradient(
+    86deg,
+    rgba(210, 190, 0, 1) 30%,
+    rgba(237, 218, 36, 1) 60%
+  );
+  color: black;
+  font-weight: 500;
+  padding: 15px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 15px;
+  box-shadow: 1px 0.5px 1px black;
+  font-size: $small-mobile-font-size;
+}
+
+@mixin gradientCircle() {
+  background: rgb(255, 224, 15);
+  background: radial-gradient(
+    circle,
+    rgba(255, 224, 15, 0.2) 0%,
+    rgba(5, 5, 5, 0) 33%
+  );
+  border-radius: 50px;
+}
