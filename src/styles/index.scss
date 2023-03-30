@@ -14,7 +14,7 @@
 body {
   background-color: $main-background-color;
   color: white;
-  height: 300vh;
+  height: 600vh;
 }
 
 .body-wrapper {
@@ -52,5 +52,15 @@ body {
   margin-bottom: 15px;
 }
 
+a:link,
+:visited,
+:hover {
+  text-decoration: none;
+  color: black;
+  cursor: auto;
+}
+
 @import "components/header";
 @import "components/services";
+@import "components/aboutus";
+@import "components/contacts";

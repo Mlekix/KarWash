@@ -1,0 +1,16 @@
+.about-us {
+  @include newSection();
+  background-color: rgba(31, 31, 31, 0.575);
+  padding: 30px 10px;
+  .us-icon {
+    font-size: $large-mobile-font-size;
+    height: 65px;
+    width: 100px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid $main-extra-color;
+  }
+  p {
+    font-size: $normal-mobile-font-size;
+    letter-spacing: 1px;
+  }
+}
