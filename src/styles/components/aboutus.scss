@@ -1,7 +1,9 @@
 .about-us {
   @include newSection();
-  background-color: rgba(31, 31, 31, 0.575);
+  @include boxShadow();
+  background-color: $second-background-color;
   padding: 30px 10px;
+  color: white;
   .us-icon {
     font-size: $large-mobile-font-size;
     height: 65px;

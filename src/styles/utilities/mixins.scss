@@ -11,12 +11,12 @@
 @mixin goldButton() {
   background: rgb(210, 190, 0);
   background: linear-gradient(
-    86deg,
-    rgba(210, 190, 0, 1) 30%,
-    rgba(237, 218, 36, 1) 60%
+    100deg,
+    rgba(210, 190, 0, 1) 40%,
+    rgb(185, 168, 8) 60%
   );
   color: black;
-  font-weight: 500;
+  font-weight: 600;
   padding: 15px 25px;
   text-align: center;
   text-transform: uppercase;
@@ -26,13 +26,13 @@
 }
 
 @mixin gradientCircle() {
-  background: rgb(255, 224, 15);
-  background: radial-gradient(
-    circle,
-    rgba(255, 224, 15, 0.2) 0%,
-    rgba(5, 5, 5, 0) 33%
-  );
+  position: absolute;
+  width: 150vw;
+  height: 150vw;
+  background: rgba(255, 223, 15, 0.1);
+  background: radial-gradient(circle, #ffdf0f25 0%, rgba(5, 5, 5, 0) 33%);
   border-radius: 50px;
+  z-index: -1;
 }
 
 @mixin newSection() {
@@ -44,4 +44,16 @@
   text-align: center;
   overflow: hidden;
   position: relative;
+}
+
+@mixin boxShadow() {
+  -webkit-box-shadow: 0px -2px 20px -10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px -2px 20px -10px rgba(0, 0, 0, 1);
+  box-shadow: 0px -2px 20px -10px rgba(0, 0, 0, 1);
+}
+
+@mixin boxShadowImg() {
+  -webkit-box-shadow: 10px -2px 20px -10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px -2px 20px -10px rgba(0, 0, 0, 1);
+  box-shadow: 10px -2px 20px -10px rgba(0, 0, 0, 1);
 }
