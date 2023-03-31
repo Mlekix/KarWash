@@ -2,6 +2,8 @@
   @include newSection();
   align-items: flex-start;
   text-align: left;
+
+  margin-bottom: 15px;
   .contact {
     display: flex;
     font-size: $normal-mobile-font-size;
@@ -30,6 +32,39 @@
       font-size: 40px;
       padding: 15px 15px 5px 15px;
       margin: 5px 10px 10px 0;
+      border: none;
+    }
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: $normal-mobile-font-size;
+    .form-title {
+      @include whiteFontColor();
+      margin-bottom: 15px;
+    }
+    input[type="text"],
+    .sending-input {
+      color: white;
+      padding: 12px 20px;
+      margin: 8px 0;
+      background: #4e414183;
+      border: none;
+      border-radius: 15px;
+      box-sizing: border-box;
+      &:focus-visible {
+        outline: 1px solid $main-extra-color;
+      }
+    }
+    .message {
+      height: 100px;
+      padding: 12px;
+      margin-bottom: 15px;
+    }
+    .submit-btn {
+      @include goldButton();
+      border: none;
     }
   }
 }

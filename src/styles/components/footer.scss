@@ -1,0 +1,40 @@
+footer {
+  @include boxShadow();
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.2fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: $second-background-color;
+  strong {
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: $normal-mobile-font-size;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  ul {
+    font-weight: 500;
+    list-style: none;
+    h5 {
+      font-size: $small-mobile-font-size;
+      @include goldFontColor();
+      padding: 10px 15px;
+    }
+    li {
+      padding: 15px 15px;
+      margin: 10px 0;
+      a:link,
+      :visited {
+        color: white;
+      }
+    }
+  }
+  .footer-menu {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .footer-socials {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+}
