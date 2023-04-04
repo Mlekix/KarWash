@@ -1,24 +1,6 @@
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  font-size: $logo-mobile-font-size;
-  .logo {
-    @include whiteFontColor();
-  }
-  .menu {
-    color: $main-extra-color;
-    background-color: transparent;
-    font-size: 45px;
-    transform: translateY(-3px);
-    outline: none;
-    border: none;
-  }
-}
-
 header {
   position: relative;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
   .gold {
     font-size: $large-mobile-font-size;
     span {
@@ -31,7 +13,7 @@ header {
   }
   button {
     border: none;
-    margin: 30px 5px 30px 0;
+    margin: 30px 10px 30px 5px;
     @include goldButton();
   }
 }
@@ -59,5 +41,33 @@ header {
   }
   .img3 {
     grid-area: 2 / 2 / 3 / 3;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-gallery {
+    margin: 25px auto;
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (min-width: 1023px) {
+  header {
+    display: flex;
+    padding: 30px;
+    .header-desktop-wrapper {
+      .gold {
+        font-size: 3em;
+      }
+      button {
+        font-size: 20px;
+      }
+    }
+    .header-gallery {
+      width: 100%;
+      height: 200%;
+      transform: translateY(20px);
+    }
   }
 }

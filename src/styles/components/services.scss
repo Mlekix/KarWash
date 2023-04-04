@@ -13,4 +13,14 @@
       font-size: $small-mobile-font-size;
     }
   }
+  .show-more-services {
+    @include goldButton();
+    margin-top: 30px;
+    font-size: $small-mobile-font-size;
+    border: none;
+    ion-icon {
+      font-size: 15px;
+      margin-right: 10px;
+    }
+  }
 }
