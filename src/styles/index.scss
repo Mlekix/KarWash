@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 @import "utilities/colors";
 @import "utilities/fonts";
@@ -8,11 +8,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 body {
-  background-color: $main-background-color;
+  background: rgb(19, 18, 18);
+  background: linear-gradient(
+    180deg,
+    rgba(19, 18, 18, 1) 30%,
+    rgba(40, 39, 38, 1) 65%,
+    rgba(19, 18, 18, 1) 95%
+  );
   color: white;
 }
 
@@ -22,6 +28,7 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
+  overflow-x: hidden;
 }
 
 .gradient-circle {
@@ -29,18 +36,18 @@ body {
 }
 
 .circle-top {
-  top: -40%;
-  left: -60%;
+  top: -35%;
+  left: -50%;
 }
 
 .circle-mid {
-  top: 20%;
-  right: -65%;
+  bottom: -25%;
+  right: -50%;
 }
 
 .circle-bottom {
-  bottom: -10%;
-  right: -65%;
+  bottom: -30%;
+  left: -45%;
 }
 
 .gold {
@@ -60,8 +67,49 @@ a:link,
   cursor: auto;
 }
 
+@import "components/nav";
 @import "components/header";
 @import "components/services";
 @import "components/aboutus";
 @import "components/contacts";
 @import "components/footer";
+
+@media (min-width: 767px) {
+  .circle-top {
+    top: -30%;
+    left: -25%;
+  }
+
+  .circle-mid {
+    bottom: -30%;
+    right: -30%;
+  }
+
+  .circle-bottom {
+    bottom: -35%;
+    left: -30%;
+  }
+}
+
+@media (min-width: 1023px) {
+  .circle-top {
+    width: 700px;
+    height: 700px;
+    top: -85%;
+    left: -30%;
+  }
+
+  .circle-mid {
+    width: 700px;
+    height: 700px;
+    bottom: -40%;
+    right: -30%;
+  }
+
+  .circle-bottom {
+    width: 700px;
+    height: 700px;
+    bottom: -45%;
+    left: -30%;
+  }
+}

@@ -16,3 +16,19 @@
     letter-spacing: 1px;
   }
 }
+
+@media (min-width: 767px) {
+  .about-us {
+    .about-us-description {
+      padding: 10px 40px;
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .about-us {
+    .about-us-description {
+      padding: 10px 100px;
+    }
+  }
+}
