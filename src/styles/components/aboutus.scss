@@ -3,6 +3,8 @@
   @include boxShadow();
   background-color: $second-background-color;
   padding: 30px 10px;
+  margin: 30px;
+  border-radius: 30px;
   color: white;
   .us-icon {
     font-size: $large-mobile-font-size;
@@ -30,5 +32,11 @@
     .about-us-description {
       padding: 10px 100px;
     }
+  }
+}
+
+@media (min-width: 1439px) {
+  .about-us {
+    margin: 60px;
   }
 }

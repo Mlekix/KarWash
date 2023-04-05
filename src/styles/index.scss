@@ -12,13 +12,21 @@
 }
 
 body {
-  background: rgb(19, 18, 18);
+  // background: rgb(19, 18, 18);
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(19, 18, 18, 1) 30%,
+  //   rgba(40, 39, 38, 1) 65%,
+  //   rgba(19, 18, 18, 1) 95%
+  // );
+  background: rgb(32, 30, 32);
   background: linear-gradient(
     180deg,
-    rgba(19, 18, 18, 1) 30%,
-    rgba(40, 39, 38, 1) 65%,
-    rgba(19, 18, 18, 1) 95%
+    #201e20 30%,
+    rgb(40, 39, 38) 65%,
+    rgba(32, 30, 32, 1) 95%
   );
+
   color: white;
 }
 
@@ -36,18 +44,18 @@ body {
 }
 
 .circle-top {
-  top: -35%;
-  left: -50%;
+  top: -45%;
+  left: -80%;
 }
 
 .circle-mid {
-  bottom: -25%;
-  right: -50%;
+  bottom: -35%;
+  right: -93.5%;
 }
 
 .circle-bottom {
-  bottom: -30%;
-  left: -45%;
+  bottom: -40%;
+  left: -95%;
 }
 
 .gold {
@@ -71,23 +79,28 @@ a:link,
 @import "components/header";
 @import "components/services";
 @import "components/aboutus";
+@import "components/subs";
 @import "components/contacts";
 @import "components/footer";
 
+.iicon {
+  cursor: pointer;
+}
+
 @media (min-width: 767px) {
   .circle-top {
-    top: -30%;
-    left: -25%;
+    top: -45%;
+    left: -45%;
   }
 
   .circle-mid {
-    bottom: -30%;
-    right: -30%;
+    bottom: -40%;
+    right: -45%;
   }
 
   .circle-bottom {
-    bottom: -35%;
-    left: -30%;
+    bottom: -45%;
+    left: -45%;
   }
 }
 
@@ -95,8 +108,8 @@ a:link,
   .circle-top {
     width: 700px;
     height: 700px;
-    top: -85%;
-    left: -30%;
+    top: -65%;
+    left: -35%;
   }
 
   .circle-mid {
@@ -111,5 +124,25 @@ a:link,
     height: 700px;
     bottom: -45%;
     left: -30%;
+  }
+}
+
+@media (min-width: 1439px) {
+  .circle-top {
+    top: -75%;
+    left: -25%;
+  }
+  .circle-mid {
+    bottom: -35%;
+    right: -25%;
+  }
+
+  .circle-bottom {
+    bottom: -50%;
+    left: -25%;
+  }
+
+  .section-title {
+    font-size: 3.5em;
   }
 }

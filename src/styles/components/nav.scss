@@ -64,8 +64,10 @@ nav {
       .desktop-nav-ig {
         @include goldButton();
         border: none;
-        font-size: 20px;
-        padding: 10px 15px;
+        font-size: 50px;
+        padding: 0px;
+        width: 55px;
+        height: 60px;
         margin: 0px 20px;
       }
     }
