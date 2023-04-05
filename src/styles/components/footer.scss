@@ -25,9 +25,18 @@ footer {
     li {
       padding: 15px 15px;
       margin: 10px 0;
+      &:hover {
+        color: $main-extra-color;
+        text-decoration: underline;
+      }
       a:link,
       :visited {
+        padding: 10px 10px 10px 0;
         color: white;
+        cursor: pointer;
+      }
+      a:hover {
+        color: $main-extra-color;
       }
     }
   }
@@ -36,5 +45,54 @@ footer {
   }
   .footer-socials {
     grid-area: 2 / 2 / 3 / 3;
+  }
+  .footer-contact {
+    grid-area: 3 / 1 / 4 / 3;
+    margin: 0 auto;
+    font-size: 18px;
+    a:link,
+    :visited {
+      padding: 10px 10px 10px 0;
+      color: white;
+      cursor: pointer;
+    }
+    a:hover {
+      color: $main-extra-color;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .footer-menu {
+    margin: 0 auto;
+    a {
+      font-size: 20px;
+    }
+  }
+  .footer-socials {
+    margin: 0 auto;
+    a {
+      font-size: 20px;
+    }
+  }
+  .footer-contact {
+    a {
+      font-size: 23px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  footer {
+    grid-template-columns: repeat(2, 0.6fr) 1fr;
+    strong {
+      grid-area: 1 / 1 / 2 / 4;
+    }
+    .footer-contact {
+      grid-area: 2 / 3 / 3 / 4;
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

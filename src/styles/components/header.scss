@@ -11,10 +11,11 @@ header {
     margin-top: 10px;
     font-size: $normal-mobile-font-size;
   }
-  button {
+  .header-button {
+    @include goldButton();
+    cursor: pointer;
     border: none;
     margin: 30px 10px 30px 5px;
-    @include goldButton();
   }
 }
 
@@ -68,6 +69,21 @@ header {
       width: 100%;
       height: 200%;
       transform: translateY(20px);
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  header {
+    padding: 60px;
+    .header-desktop-wrapper {
+      align-self: center;
+      .gold {
+        font-size: 3.5em;
+      }
+      p {
+        font-size: 2em;
+      }
     }
   }
 }

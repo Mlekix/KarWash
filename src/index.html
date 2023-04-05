@@ -14,14 +14,16 @@
     <div class="body-wrapper">
       <nav>
         <strong class="logo">LOGO KarWash</strong>
-        <button class="menu"><ion-icon name="menu-outline"></ion-icon></button>
+        <button class="menu">
+          <ion-icon class="iicon" name="menu-outline"></ion-icon>
+        </button>
         <div class="desktop-nav">
           <button class="desktop-nav-btn">Główna</button
           ><button class="desktop-nav-btn">Usługi</button
           ><button class="desktop-nav-btn">O nas</button
           ><button class="desktop-nav-btn">Kontkat</button
           ><button class="desktop-nav-ig">
-            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon class="iicon" name="logo-instagram"></ion-icon>
           </button>
         </div>
       </nav>
@@ -32,9 +34,9 @@
             Detailing to dążenie do <span>perfekcji</span>
             skrywanej w szczegółach.
           </h1>
-          <p>Świadczymy wysokiej jakości usługi autodetailongowe</p>
-          <button class="header-button-service">Nasze Usługi</button>
-          <button class="header-button-contact">Umów się</button>
+          <p>Świadczymy wysokiej jakości usługi autodetailongowe.</p>
+          <button class="header-button">Nasze Usługi</button>
+          <button class="header-button">Umów się</button>
         </div>
         <div class="header-gallery">
           <img class="img1" src="images/car-wash-detailing-station.jpg" />
@@ -47,7 +49,7 @@
         <h2 class="section-title gold">Nasze usługi</h2>
         <div class="service">
           <div class="service-icon">
-            <ion-icon name="car-sport-outline"></ion-icon>
+            <ion-icon class="iicon" name="car-sport-outline"></ion-icon>
           </div>
           <h3 class="gold paragraph-title">Zewnętrzne mycie</h3>
           <p>
@@ -57,7 +59,7 @@
         </div>
         <div class="service">
           <div class="service-icon">
-            <ion-icon name="brush-outline"></ion-icon>
+            <ion-icon class="iicon" name="brush-outline"></ion-icon>
           </div>
           <h3 class="gold paragraph-title">Detailing wnętrza samochodu</h3>
           <p>
@@ -67,7 +69,7 @@
         </div>
         <div class="service">
           <div class="service-icon">
-            <ion-icon name="diamond-outline"></ion-icon>
+            <ion-icon class="iicon" name="diamond-outline"></ion-icon>
           </div>
           <h3 class="gold paragraph-title">Polerowanie lakieru</h3>
           <p>
@@ -77,7 +79,7 @@
         </div>
         <div class="service">
           <div class="service-icon">
-            <ion-icon name="color-wand-outline"></ion-icon>
+            <ion-icon class="iicon" name="color-wand-outline"></ion-icon>
           </div>
           <h3 class="gold paragraph-title">Aplikacja powłok ochronnych</h3>
           <p>
@@ -90,7 +92,7 @@
       <section class="about-us">
         <h2 class="section-title gold">O nas</h2>
         <div class="us-icon">
-          <ion-icon name="people-outline"></ion-icon>
+          <ion-icon class="iicon" name="people-outline"></ion-icon>
         </div>
         <p class="about-us-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
@@ -98,6 +100,60 @@
           aliquid eaque ut nemo voluptatum odio quae odit asperiores.
         </p>
       </section>
+      <h2 class="subs-title section-title gold">Pakiet na dłużej?</h2>
+      <main class="subs">
+        <div class="subs-card">
+          <h3 class="sub-name">Ja Biedak</h3>
+          <h4 class="price">999 pln</h4>
+          <div class="offer-card-wrapper">
+            <p class="inside-of">Pakiet obejmuje</p>
+            <ul class="offer-card-list">
+              <li>obleje wodą</li>
+              <li>wysusze</li>
+              <li>śmieci wyrzuce</li>
+              <li>kiepownice opróżnie</li>
+              <li>akumulator odepne</li>
+            </ul>
+          </div>
+          <button class="sub-card-btn">Chciałbym to!</button>
+        </div>
+        <div class="subs-card best-card">
+          <h6>Najbardziej popularny</h6>
+          <h3 class="sub-name best-card-name">OMG Kozak</h3>
+          <h4 class="price best-card-price">1999 pln</h4>
+          <div class="offer-card-wrapper">
+            <p class="inside-of best-of">
+              Pakiet obejmuje<br />Usługi pakietu Ja Biedak i dodatkowo:
+            </p>
+            <ul class="offer-card-list">
+              <li>ssanie</li>
+              <li>pucowanie</li>
+              <li>utrzymanie ruchu</li>
+              <li>polerka rury</li>
+              <li>foot img</li>
+            </ul>
+          </div>
+          <button class="sub-card-btn">Chciałbym to!</button>
+        </div>
+        <div class="subs-card">
+          <h6>Rekomendowany</h6>
+          <h3 class="sub-name">Bóg wszechczyszcący</h3>
+          <h4 class="price">2999 pln</h4>
+          <div class="offer-card-wrapper">
+            <p class="inside-of">
+              Pakiet obejmuje<br />Usługi pakietu OMG Kozak i dodatkowo:
+            </p>
+            <ul class="offer-card-list">
+              <li>cykne zdjęcie</li>
+              <li>przejade się</li>
+              <li>obramówka na rejestracje</li>
+              <li>dam husteczki</li>
+              <li>twój stary</li>
+            </ul>
+          </div>
+          <button class="sub-card-btn">Chciałbym to!</button>
+        </div>
+      </main>
       <section class="contacts">
         <div class="gradient-circle circle-bottom"></div>
         <h2 class="section-title gold">Skontaktuj się z nami</h2>
@@ -120,15 +176,18 @@
           <div class="socials-wrapper">
             <a href="#"
               ><button class="social">
-                <ion-icon name="logo-facebook"></ion-icon></button
+                <ion-icon class="iicon" name="logo-facebook"></ion-icon></button
             ></a>
             <a href="#"
               ><button class="social">
-                <ion-icon name="logo-instagram"></ion-icon></button
+                <ion-icon
+                  class="iicon"
+                  name="logo-instagram"
+                ></ion-icon></button
             ></a>
             <a href="#"
               ><button class="social">
-                <ion-icon name="logo-tiktok"></ion-icon></button
+                <ion-icon class="iicon" name="logo-tiktok"></ion-icon></button
             ></a>
           </div>
         </div>
@@ -160,17 +219,33 @@
         <ul class="footer-socials">
           <h5>Obserwuj nas</h5>
           <li>
-            <a href="#"><ion-icon name="logo-facebook"></ion-icon> Facebook</a>
-          </li>
-          <li>
             <a href="#"
-              ><ion-icon name="logo-instagram"></ion-icon> Instagram</a
+              ><ion-icon class="iicon" name="logo-facebook"></ion-icon>
+              Facebook</a
             >
           </li>
           <li>
-            <a href="#"><ion-icon name="logo-tiktok"></ion-icon> TikTok</a>
+            <a href="#"
+              ><ion-icon class="iicon" name="logo-instagram"></ion-icon>
+              Instagram</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon class="iicon" name="logo-tiktok"></ion-icon> TikTok</a
+            >
           </li>
         </ul>
+        <div class="footer-contact">
+          <a href="#"
+            ><ion-icon class="iicon" name="mail-outline"></ion-icon>
+            karwash@gmail.com</a
+          >
+          <a href="#"
+            ><ion-icon class="iicon" name="call-outline"></ion-icon>
+            +48608481240</a
+          >
+        </div>
       </footer>
     </div>
     <script
