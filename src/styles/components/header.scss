@@ -87,3 +87,20 @@ header {
     }
   }
 }
+
+@media (min-width: 1919px) {
+  header {
+    padding: 90px;
+    .header-desktop-wrapper {
+      .gold {
+        font-size: 5em;
+      }
+      p {
+        font-size: 3em;
+      }
+      .header-button {
+        font-size: 1.5em;
+      }
+    }
+  }
+}

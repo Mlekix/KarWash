@@ -12,13 +12,6 @@
 }
 
 body {
-  // background: rgb(19, 18, 18);
-  // background: linear-gradient(
-  //   180deg,
-  //   rgba(19, 18, 18, 1) 30%,
-  //   rgba(40, 39, 38, 1) 65%,
-  //   rgba(19, 18, 18, 1) 95%
-  // );
   background: rgb(32, 30, 32);
   background: linear-gradient(
     180deg,
@@ -144,5 +137,29 @@ a:link,
 
   .section-title {
     font-size: 3.5em;
+  }
+}
+
+@media (min-width: 1919px) {
+  .circle-top {
+    top: -50%;
+    left: -15%;
+  }
+  .circle-mid {
+    bottom: -30%;
+    right: -17%;
+  }
+
+  .circle-bottom {
+    bottom: -50%;
+    left: -15%;
+  }
+
+  .section-title {
+    font-size: 3.5em;
+  }
+
+  .section-title {
+    font-size: 4.5em;
   }
 }
