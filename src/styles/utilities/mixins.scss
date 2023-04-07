@@ -1,6 +1,4 @@
 @mixin goldFontColor() {
-  // background: -webkit-linear-gradient(#f1dd23, #c5b203);
-  // background: -webkit-linear-gradient(#89cff0, #67b2d4);
   background: -webkit-linear-gradient(#ddc3a5, #d4a36e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -11,12 +9,6 @@
   -webkit-text-fill-color: transparent;
 }
 @mixin goldButton() {
-  // background: rgb(137, 207, 240);
-  // background: linear-gradient(
-  //   100deg,
-  //   rgb(137, 207, 240) 40%,
-  //   rgb(103, 178, 212) 60%
-  // );
   background: rgb(221, 195, 165);
   background: linear-gradient(156deg, #ddc3a5 30%, #d4a36e 70%);
   color: black;
@@ -64,6 +56,9 @@
   @media (min-width: 1439px) {
     padding: 60px;
   }
+  @media (min-width: 1919px) {
+    padding: 60px 90px;
+  }
 }
 
 @mixin boxShadow() {
@@ -73,7 +68,5 @@
 }
 
 @mixin boxShadowImg() {
-  -webkit-box-shadow: 10px -2px 20px -10px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 10px -2px 20px -10px rgba(0, 0, 0, 1);
-  box-shadow: 10px -2px 20px -10px rgba(0, 0, 0, 1);
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }

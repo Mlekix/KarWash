@@ -34,7 +34,7 @@ nav {
         outline: none;
         background-color: transparent;
         color: white;
-        font-size: $logo-mobile-font-size;
+        font-size: $small-mobile-font-size;
         margin: 0 20px;
         padding: 0 5px;
         border-bottom: 1px solid white;
@@ -69,6 +69,16 @@ nav {
         width: 55px;
         height: 60px;
         margin: 0px 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1439px) {
+  nav {
+    .desktop-nav {
+      .desktop-nav-btn {
+        font-size: $logo-mobile-font-size;
       }
     }
   }
