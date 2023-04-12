@@ -29,6 +29,18 @@ footer {
         color: $main-extra-color;
         text-decoration: underline;
       }
+      .footer-btn {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+          color: $main-extra-color;
+          text-decoration: underline;
+        }
+      }
       a:link,
       :visited {
         padding: 10px 10px 10px 0;

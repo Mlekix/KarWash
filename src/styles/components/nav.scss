@@ -17,6 +17,66 @@ nav {
   .desktop-nav {
     display: none;
   }
+  .nav-logo {
+    display: none;
+  }
+  .close-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    z-index: 3;
+    background: rgb(32, 30, 32);
+    background: linear-gradient(
+      180deg,
+      #201e20 30%,
+      rgb(40, 39, 38) 65%,
+      rgba(32, 30, 32, 1) 95%
+    );
+    height: 100%;
+    width: 100%;
+    padding: 40px 20px;
+    .nav-logo {
+      display: block;
+    }
+    .close-btn {
+      display: block;
+
+      background-color: transparent;
+      color: white;
+      border: none;
+      font-size: 40px;
+    }
+    .desktop-nav-btn {
+      padding: 20px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: white;
+      font-size: $small-mobile-font-size;
+      margin: 0 20px;
+      padding: 0 5px;
+      border-bottom: 1px solid white;
+      position: relative;
+      transition: border-bottom-color 1s ease-in-out;
+      cursor: pointer;
+    }
+    .desktop-nav-ig {
+      @include goldButton();
+      border: none;
+      font-size: 50px;
+      padding: 0px;
+      width: 55px;
+      height: 60px;
+      margin: 0px 20px;
+    }
+  }
 }
 
 @media (min-width: 1023px) {
