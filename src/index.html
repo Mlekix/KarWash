@@ -12,17 +12,21 @@
   </head>
   <body>
     <div class="body-wrapper">
-      <nav>
+      <nav class="start">
         <strong class="logo">LOGO KarWash</strong>
         <button class="menu">
           <ion-icon class="iicon" name="menu-outline"></ion-icon>
         </button>
         <div class="desktop-nav">
-          <button class="desktop-nav-btn">Główna</button
-          ><button class="desktop-nav-btn">Usługi</button
-          ><button class="desktop-nav-btn">O nas</button
-          ><button class="desktop-nav-btn">Pakiety</button
-          ><button class="desktop-nav-btn">Kontkat</button
+          <strong class="nav-logo">LOGO KarWash</strong>
+
+          <button class="desktop-nav-btn main-section-btn">Główna</button
+          ><button class="desktop-nav-btn service-section-btn">Usługi</button
+          ><button class="desktop-nav-btn aboutus-section-btn">O nas</button
+          ><button class="desktop-nav-btn subs-section-btn">Pakiety</button
+          ><button class="desktop-nav-btn contact-section-btn">Kontkat</button>
+          <button class="close-btn">
+            <ion-icon name="close-circle-outline"></ion-icon></button
           ><button class="desktop-nav-ig">
             <ion-icon class="iicon" name="logo-instagram"></ion-icon>
           </button>
@@ -36,8 +40,10 @@
             skrywanej w szczegółach.
           </h1>
           <p>Świadczymy wysokiej jakości usługi autodetailongowe.</p>
-          <button class="header-button">Nasze Usługi</button>
-          <button class="header-button">Umów się</button>
+          <button class="header-button service-section-btn">
+            Nasze Usługi
+          </button>
+          <button class="header-button contact-section-btn">Umów się</button>
         </div>
         <div class="header-gallery">
           <img class="img1" src="images/car-wash-detailing-station.jpg" />
@@ -88,7 +94,9 @@
             temporibus!
           </p>
         </div>
-        <button class="show-more-services">Zobacz całą ofertę</button>
+        <a href="/src/services.html" class="show-more-services"
+          >Zobacz całą ofertę</a
+        >
       </section>
       <section class="about-us">
         <h2 class="section-title gold">O nas</h2>
@@ -116,7 +124,9 @@
               <li>akumulator odepne</li>
             </ul>
           </div>
-          <button class="sub-card-btn">Chciałbym to!</button>
+          <button class="sub-card-btn contact-section-btn">
+            Chciałbym to!
+          </button>
         </div>
         <div class="subs-card best-card">
           <h6>Najbardziej popularny</h6>
@@ -134,7 +144,9 @@
               <li>foot img</li>
             </ul>
           </div>
-          <button class="sub-card-btn">Chciałbym to!</button>
+          <button class="sub-card-btn contact-section-btn">
+            Chciałbym to!
+          </button>
         </div>
         <div class="subs-card">
           <h6>Rekomendowany</h6>
@@ -152,7 +164,9 @@
               <li>twój stary</li>
             </ul>
           </div>
-          <button class="sub-card-btn">Chciałbym to!</button>
+          <button class="sub-card-btn contact-section-btn">
+            Chciałbym to!
+          </button>
         </div>
       </main>
       <section class="contacts">
@@ -163,13 +177,13 @@
             <div class="contact-icon">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-            <a>karwash@gmail.com</a>
+            <a href="mailto:karwash@gmail.com">karwash@gmail.com</a>
           </div>
           <div class="contact left-contact">
             <div class="contact-icon">
               <ion-icon name="call-outline"></ion-icon>
             </div>
-            <a>+48608481240</a>
+            <a href="tel:+48608481240">+48608481240</a>
           </div>
         </div>
         <div class="socials">
@@ -212,11 +226,15 @@
         <strong class="gold">LOGO KarWash</strong>
         <ul class="footer-menu">
           <h5>Menu</h5>
-          <li><a href="#">Główna</a></li>
-          <li><a href="#">Nasze usługi</a></li>
-          <li><a href="#">O nas</a></li>
-          <li><a href="#">Pakiety</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li><button class="footer-btn main-section-btn">Główna</button></li>
+          <li>
+            <button class="footer-btn service-section-btn">Nasze usługi</button>
+          </li>
+          <li><button class="footer-btn aboutus-section-btn">O nas</button></li>
+          <li><button class="footer-btn subs-section-btn">Pakiety</button></li>
+          <li>
+            <button class="footer-btn contact-section-btn">Kontakt</button>
+          </li>
         </ul>
         <ul class="footer-socials">
           <h5>Obserwuj nas</h5>
@@ -239,11 +257,11 @@
           </li>
         </ul>
         <div class="footer-contact">
-          <a href="#"
+          <a href="mailto:karwash@gmail.com"
             ><ion-icon class="iicon" name="mail-outline"></ion-icon>
             karwash@gmail.com</a
           >
-          <a href="#"
+          <a href="tel:+48608481240"
             ><ion-icon class="iicon" name="call-outline"></ion-icon>
             +48608481240</a
           >

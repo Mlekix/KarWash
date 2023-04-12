@@ -19,6 +19,15 @@
     a {
       transform: translateY(8px);
     }
+    a:link,
+    :visited {
+      padding: 10px 10px 10px 0;
+      color: white;
+      cursor: pointer;
+    }
+    a:hover {
+      color: $main-extra-color;
+    }
   }
   h4 {
     font-size: $normal-mobile-font-size;
