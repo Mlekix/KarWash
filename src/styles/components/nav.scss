@@ -3,6 +3,7 @@ nav {
   justify-content: space-between;
   padding: 10px 10px 0 10px;
   font-size: $logo-mobile-font-size;
+  z-index: 2;
   .logo {
     @include whiteFontColor();
   }
@@ -47,7 +48,6 @@ nav {
     }
     .close-btn {
       display: block;
-
       background-color: transparent;
       color: white;
       border: none;

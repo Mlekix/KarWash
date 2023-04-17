@@ -1,6 +1,18 @@
+@keyframes slide-up {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
 header {
   position: relative;
   padding: 0 10px 10px 10px;
+  transform: translateY(50%);
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   .gold {
     font-size: $large-mobile-font-size;
     span {

@@ -208,15 +208,24 @@
         </div>
         <form class="contact-form">
           <h4 class="form-title">Formularz kontaktowy</h4>
-          <input class="sending-input" type="text" placeholder="Imię" />
-          <input class="sending-input" type="text" placeholder="Email" />
           <input
-            class="sending-input"
+            class="sending-input name-input"
             type="text"
+            placeholder="Imię"
+          />
+          <input
+            class="sending-input email-input"
+            type="text"
+            placeholder="Email"
+          />
+          <input
+            class="sending-input number-input"
+            type="number"
             placeholder="Numer telefonu"
+            step="none"
           />
           <textarea
-            class="sending-input message"
+            class="sending-input message message-input"
             placeholder="Twoja wiadomość"
           ></textarea>
           <input class="submit-btn" type="submit" value="Wyślij" />
@@ -268,6 +277,7 @@
         </div>
       </footer>
     </div>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -275,6 +285,10 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
   </body>
 </html>
