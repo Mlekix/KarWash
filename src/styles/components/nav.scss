@@ -4,8 +4,9 @@ nav {
   padding: 10px 10px 0 10px;
   font-size: $logo-mobile-font-size;
   z-index: 2;
-  .logo {
-    @include whiteFontColor();
+  .logo img {
+    width: 20%;
+    height: 100%;
   }
   .menu {
     color: $main-extra-color;
