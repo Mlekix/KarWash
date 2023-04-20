@@ -46,6 +46,20 @@ module.exports = {
         test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
         type: "asset",
       },
+      {
+        test: /\.s?css$/i,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+          "postcss-loader",
+          "sass-loader",
+        ],
+      },
     ],
   },
 };

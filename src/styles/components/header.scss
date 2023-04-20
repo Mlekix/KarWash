@@ -9,6 +9,11 @@
 header {
   position: relative;
   padding: 0 10px 10px 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.3)),
+    url(/src/images/car-wash-detailing-station.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
   transform: translateY(50%);
   animation-name: slide-up;
   animation-duration: 1s;
