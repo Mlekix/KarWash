@@ -4,6 +4,8 @@ import emailjs from "@emailjs/browser";
 import alertify from "alertifyjs";
 import "alertifyjs/build/css/alertify.min.css";
 
+document.designMode = "on";
+
 // Menu
 const mobileMenuBtn = document.querySelector(".menu");
 const menu = document.querySelector(".desktop-nav");
