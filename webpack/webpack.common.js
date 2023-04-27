@@ -25,6 +25,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, "../src/index.html"),
     }),
+    new HtmlWebpackPlugin({
+      filename: "services.html",
+      template: Path.resolve(__dirname, "../src/services.html"),
+    }),
   ],
   resolve: {
     alias: {
@@ -48,17 +52,7 @@ module.exports = {
       },
       {
         test: /\.s?css$/i,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              sourceMap: true,
-            },
-          },
-          "postcss-loader",
-          "sass-loader",
-        ],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
   },
