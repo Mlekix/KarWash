@@ -28,27 +28,4 @@ module.exports = merge(common, {
       files: Path.resolve(__dirname, "../src"),
     }),
   ],
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        include: Path.resolve(__dirname, "../src"),
-        loader: "babel-loader",
-      },
-      {
-        test: /\.s?css$/i,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              sourceMap: true,
-            },
-          },
-          "postcss-loader",
-          "sass-loader",
-        ],
-      },
-    ],
-  },
 });
