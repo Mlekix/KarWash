@@ -6,34 +6,55 @@
     transform: translateY(0%);
   }
 }
+
+@keyframes change-background {
+  0% {
+    background-image: url(/src/images/car-wash-detailing-station.jpg);
+    animation-delay: 5s;
+  }
+  50% {
+    background-image: url(/src/images/car-wash-detailing-station2.jpg);
+    animation-delay: 5s;
+  }
+  100% {
+    background-image: url(/src/images/close-up-car-care-process.jpg);
+    animation-delay: 5s;
+  }
+  110% {
+    background-image: url(/src/images/car-wash-detailing-station.jpg);
+  }
+}
+
 header {
   position: relative;
   padding: 0 10px 10px 10px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.3)),
-    url(/src/images/car-wash-detailing-station.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
   transform: translateY(50%);
-  animation-name: slide-up;
-  animation-duration: 1s;
+  animation-name: slide-up, change-background;
+  animation-duration: 1s, 25s;
   animation-fill-mode: forwards;
-  .gold {
-    font-size: $large-mobile-font-size;
-    span {
-      @include whiteFontColor();
-    }
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-direction: alternate;
+}
+
+.gold {
+  font-size: $large-mobile-font-size;
+  span {
+    @include whiteFontColor();
   }
-  p {
-    margin-top: 10px;
-    font-size: $normal-mobile-font-size;
-  }
-  .header-button {
-    @include goldButton();
-    cursor: pointer;
-    border: none;
-    margin: 30px 10px 30px 5px;
-  }
+}
+p {
+  margin-top: 10px;
+  font-size: $normal-mobile-font-size;
+}
+.header-button {
+  @include goldButton();
+  cursor: pointer;
+  border: none;
+  margin: 30px 10px 30px 5px;
 }
 
 .header-gallery {
