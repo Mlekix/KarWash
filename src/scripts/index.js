@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import alertify from "alertifyjs";
 import "alertifyjs/build/css/alertify.min.css";
 
-document.designMode = "on";
+// document.designMode = "on";
 
 // Menu
 const mobileMenuBtn = document.querySelector(".menu");
@@ -123,3 +123,5 @@ const sendMail = (event) => {
 };
 
 submitFormBtn.addEventListener("click", sendMail);
+
+//backgroud swap
