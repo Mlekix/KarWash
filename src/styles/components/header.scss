@@ -9,7 +9,7 @@
 
 @keyframes change-background {
   0% {
-    background-image: url(/src/images/car-wash-detailing-station.jpg);
+    background-image: url(/src/images/main-header.png);
     animation-delay: 5s;
   }
   50% {
@@ -17,11 +17,11 @@
     animation-delay: 5s;
   }
   100% {
-    background-image: url(/src/images/close-up-car-care-process.jpg);
+    background-image: url(/src/images/next-header.png);
     animation-delay: 5s;
   }
   110% {
-    background-image: url(/src/images/car-wash-detailing-station.jpg);
+    background-image: url(/src/images/main-header.png);
   }
 }
 
